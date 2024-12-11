@@ -17,19 +17,33 @@
 /* Typography */
 @font-face {
     font-family: rpg1;
-    src: url(rpg1.otf) format("opentype");
+    src: url("rpg1.otf") format("opentype");
+}
+@font-face {
+  font-family: yume;
+  src: url("yume.otf") format("opentype")
+}
+
+h1 {
+  font-family: yume;
+  font-size:0.8em;
+  font-weight:inherit
+}
+.preamble {
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .page-wrapper {
   font-family: rpg1;
 }
-h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: rpg1;
-  font:inherit
+  font-size:inherit;
+  font-weight: inherit;
 }
 code {
   font: inherit
@@ -48,19 +62,13 @@ code {
   max-width: 960px;
   margin: 0 auto;
 }
-#zen-requirements::after {
-  content: "A";
-  border:1px red solid;
-  position:absolute;
-  width:6px;
-  height:16px;
-  left:10px;
-  top:10px;
-  box-sizing:border-box
-}
+
 html {
   font-size: calc(16px / 1.3);
   padding: none;
   margin: none;
   line-height: 1.3em
+}
+h1 {
+  
 }
