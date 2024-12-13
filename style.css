@@ -1,6 +1,6 @@
 /********************************** 
-* Design by:  [your name]
-* Design name:  [your design name]
+* Design by:  Ethan
+* Design name:  Unfinished
 * 
 * License: [license name - e.g. MIT if you want to let others
 * use the design with attribution, or All Rights Reserved if you
@@ -32,12 +32,19 @@ b {
 h1 {
   font-family: yume;
   font-size:0.8em;
-  font-weight:inherit
+  font-weight:inherit;
+  filter: drop-shadow(2px 2px 0px #5A3C5A)
 }
-.preamble {
-  background: linear-gradient(#DEB2E7, #9C619C);
+h2, .intro, .main, .supporting, .sidebar {
+  background-image: url("GRADIENT.png");
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-size: 6px 16px ;
+  filter: drop-shadow(1px 1px 0px #290831)
+}
+p,h1,h2,h3,h4,li,ul {
+  list-style-type: none;
+  margin:0
 }
 .page-wrapper {
   font-family: rpg1;
@@ -63,8 +70,7 @@ html {
   padding: none;
   margin: none;
   line-height: 1.3em;
-  color:#FFFFFF
+  color:#FFFFFF;
 }
-h1 {
-  
-}
+header:has(h2:hover) + section .summary,
+.summary:hover 
